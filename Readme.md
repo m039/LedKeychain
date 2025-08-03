@@ -6,5 +6,6 @@ Read [the article about this device (rus)](https://m039.ru/post/led-keychain).
 
 ![Cover](/Docs/Cover.jpg "The final keychain")
 
-https://github.com/user-attachments/assets/0cee810d-a3cd-4fab-9664-ac08b2f07036
+https://github.com/user-attachments/assets/f903246e-bd55-492d-9651-df890a68fab8
 
+https://github.com/user-attachments/assets/0cee810d-a3cd-4fab-9664-ac08b2f07036
