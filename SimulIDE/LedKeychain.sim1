@@ -1,0 +1,79 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="LedMatrix" CircId="LedMatrix-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-44,-144" rotation="90" hflip="1" vflip="1" label="LedMatrix-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Rows="8" Cols="8" Vertical_Pins="false" Threshold="2.4 V" MaxCurrent="0.3 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-180,-28" rotation="90" hflip="1" vflip="1" label="Resistor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-172,16" rotation="90" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-164,60" rotation="90" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-5" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-140,60" rotation="90" hflip="1" vflip="1" label="Resistor-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-6" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-148,16" rotation="90" hflip="1" vflip="1" label="Resistor-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-156,-28" rotation="90" hflip="1" vflip="1" label="Resistor-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-124,16" rotation="90" hflip="1" vflip="1" label="Resistor-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-132,-28" rotation="90" hflip="1" vflip="1" label="Resistor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="MCU" CircId="mega328PB-15" mainComp="false" Show_id="true" Show_Val="false" Pos="-372,-64" rotation="0" hflip="1" vflip="1" label="mega328PB-15" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Firmware/Final.hex" Auto_Load="false" saveEepr="true" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Push" CircId="Push-16" mainComp="false" Show_id="false" Show_Val="false" Pos="-244,-84" rotation="0" hflip="1" vflip="1" label="Push-16" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,-56" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Resistor-9-lPin" endpinid="LedMatrix-1-pinCol7" pointList="-124,0,-124,-88,-116,-88" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Resistor-10-lPin" endpinid="LedMatrix-1-pinCol6" pointList="-132,-44,-132,-96,-116,-96" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Resistor-5-lPin" endpinid="LedMatrix-1-pinCol5" pointList="-140,44,-140,-104,-116,-104" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Resistor-6-lPin" endpinid="LedMatrix-1-pinCol4" pointList="-148,0,-148,-112,-116,-112" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Resistor-7-lPin" endpinid="LedMatrix-1-pinCol3" pointList="-156,-44,-156,-120,-116,-120" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Resistor-4-lPin" endpinid="LedMatrix-1-pinCol2" pointList="-164,44,-164,-128,-116,-128" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Resistor-3-lPin" endpinid="LedMatrix-1-pinCol1" pointList="-172,0,-172,-136,-116,-136" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Resistor-2-lPin" endpinid="LedMatrix-1-pinCol0" pointList="-180,-44,-180,-144,-116,-144" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="mega328PB-15-PORTD0" endpinid="LedMatrix-1-pinRow7" pointList="-340,-72,-340,-164,-100,-164,-100,-160" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="mega328PB-15-PORTD2" endpinid="LedMatrix-1-pinRow5" pointList="-356,-72,-356,-180,-84,-180,-84,-160" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="mega328PB-15-PORTD3" endpinid="LedMatrix-1-pinRow4" pointList="-380,-48,-380,-188,-76,-188,-76,-160" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="mega328PB-15-PORTD4" endpinid="LedMatrix-1-pinRow3" pointList="-380,-40,-388,-40,-388,-196,-68,-196,-68,-160" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="mega328PB-15-PORTD5" endpinid="LedMatrix-1-pinRow2" pointList="-356,32,-356,36,-396,36,-396,-204,-60,-204,-60,-160" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="mega328PB-15-PORTD6" endpinid="LedMatrix-1-pinRow1" pointList="-348,32,-348,44,-404,44,-404,-212,-52,-212,-52,-160" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="mega328PB-15-PORTD7" endpinid="LedMatrix-1-pinRow0" pointList="-340,32,-340,52,-412,52,-412,-220,-44,-220,-44,-160" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="mega328PB-15-PORTB0" endpinid="Resistor-2-rPin" pointList="-332,32,-332,84,-180,84,-180,-12" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Resistor-3-rPin" endpinid="mega328PB-15-PORTB1" pointList="-172,32,-172,92,-324,92,-324,32" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="mega328PB-15-PORTB2" endpinid="Resistor-4-rPin" pointList="-316,32,-316,100,-164,100,-164,76" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="mega328PB-15-PORTB3" endpinid="Resistor-7-rPin" pointList="-308,32,-308,108,-156,108,-156,-12" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="mega328PB-15-PORTB4" endpinid="Resistor-6-rPin" pointList="-300,32,-300,116,-148,116,-148,32" />
+
+<item itemtype="Connector" uid="Connector-49" startpinid="mega328PB-15-PORTB5" endpinid="Resistor-5-rPin" pointList="-276,8,-276,124,-140,124,-140,76" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="mega328PB-15-PORTC0" endpinid="Resistor-10-rPin" pointList="-276,-40,-260,-40,-260,132,-132,132,-132,-12" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="mega328PB-15-PORTC1" endpinid="Resistor-9-rPin" pointList="-276,-48,-252,-48,-252,140,-124,140,-124,32" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="mega328PB-15-PORTC2" endpinid="Push-16-pinP0" pointList="-300,-72,-300,-84,-260,-84" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="Push-16-switch0pinN" endpinid="Ground-17-Gnd" pointList="-228,-84,-216,-84,-216,-72" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="mega328PB-15-PORTD1" endpinid="LedMatrix-1-pinRow6" pointList="-348,-72,-348,-172,-92,-172,-92,-160" />
+
+</circuit>
