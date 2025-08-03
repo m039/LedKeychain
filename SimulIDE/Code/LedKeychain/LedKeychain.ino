@@ -74,26 +74,21 @@ void loop() {
     }
   }
 
-  // draw the screen:
   refreshScreen();
 }
 
 void refreshScreen() {
   for (int thisCol = 0; thisCol < 8; thisCol++) {
-    // delay(100);
     digitalWrite(col[thisCol], HIGH);
 
     for (int thisRow = 0; thisRow < 8; thisRow++) {
       int thisPixel = pixels[thisCol][thisRow];
-      // delay(100);
       digitalWrite(row[thisRow], thisPixel);
       if (thisPixel == LOW) {
-        // delay(100);
         digitalWrite(row[thisRow], HIGH);
       }
     }
 
-    // delay(100);
     digitalWrite(col[thisCol], LOW);
   }
 }
