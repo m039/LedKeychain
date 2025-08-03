@@ -6,4 +6,5 @@ Read [the article about this device (rus)](https://m039.ru/post/led-keychain).
 
 ![Cover](/Docs/Cover.jpg "The final keychain")
 
-![Cover](/Docs/SimulIDE_Final.gif "Running in SimulIDE")
+https://github.com/user-attachments/assets/0cee810d-a3cd-4fab-9664-ac08b2f07036
+
