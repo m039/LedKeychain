@@ -18,7 +18,7 @@ void LedMatrix::init() {
 void LedMatrix::displayFrame(const uint8_t frame[]) {
     for (int y = 0; y < 8; y++) {
         for (int x = 0; x < 8; x++) {
-            _pixels[x][y] = frame[y] & (1 << x) ? LOW : HIGH;
+            _pixels[x][y] = frame[y] & (1 << x) ? HIGH : LOW;
         }
     }
 }
@@ -33,18 +33,18 @@ void LedMatrix::setIntensity(uint8_t intensity) {
 }
 
 void LedMatrix::refreshScreenInternal() {
-    for (int thisCol = 0; thisCol < 8; thisCol++) {
-        digitalWrite(col[thisCol], HIGH);
+    for (int thisRow = 0; thisRow < 8; thisRow++) {
+        digitalWrite(row[thisRow], LOW);
 
-        for (int thisRow = 0; thisRow < 8; thisRow++) {
+        for (int thisCol = 0; thisCol < 8; thisCol++) {
             int thisPixel = _pixels[thisCol][thisRow];
-            digitalWrite(row[thisRow], thisPixel);
-            if (thisPixel == LOW) {
-                digitalWrite(row[thisRow], HIGH);
+            digitalWrite(col[thisCol], thisPixel);
+            if (thisPixel == HIGH) {
+                digitalWrite(col[thisCol], LOW);
             }
         }
 
-        digitalWrite(col[thisCol], LOW);
+        digitalWrite(row[thisRow], HIGH);
     }
 }
 

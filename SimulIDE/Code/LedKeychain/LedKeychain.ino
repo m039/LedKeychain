@@ -38,13 +38,13 @@ void setup() {
   for (int thisPin = 0; thisPin < 8; thisPin++) {
     pinMode(col[thisPin], OUTPUT);
     pinMode(row[thisPin], OUTPUT);
-    digitalWrite(col[thisPin], LOW);
+    digitalWrite(col[thisPin], HIGH);
     digitalWrite(row[thisPin], HIGH);
   }
 
   for (int x = 0; x < 8; x++) {
     for (int y = 0; y < 8; y++) {
-      pixels[x][y] = HIGH;
+      pixels[x][y] = LOW;
     }
   }
 
@@ -69,7 +69,7 @@ void loop() {
 
     for (int i = 0; i < 8; i++) {
       for (int j = 0; j < 8; j++) {
-        pixels[i][j] = x == j && y == i ? LOW : HIGH;
+        pixels[i][j] = x == j && y == i ? HIGH : LOW;
       }
     }
   }
@@ -78,17 +78,17 @@ void loop() {
 }
 
 void refreshScreen() {
-  for (int thisCol = 0; thisCol < 8; thisCol++) {
-    digitalWrite(col[thisCol], HIGH);
-
     for (int thisRow = 0; thisRow < 8; thisRow++) {
-      int thisPixel = pixels[thisCol][thisRow];
-      digitalWrite(row[thisRow], thisPixel);
-      if (thisPixel == LOW) {
-        digitalWrite(row[thisRow], HIGH);
-      }
-    }
+      digitalWrite(row[thisRow], LOW);
 
-    digitalWrite(col[thisCol], LOW);
+      for (int thisCol = 0; thisCol < 8; thisCol++) {
+          int thisPixel = pixels[thisCol][thisRow];
+          digitalWrite(col[thisCol], thisPixel);
+          if (thisPixel == HIGH) {
+              digitalWrite(col[thisCol], LOW);
+          }
+      }
+
+      digitalWrite(row[thisRow], HIGH);
   }
 }
