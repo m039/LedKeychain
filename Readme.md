@@ -1,6 +1,6 @@
 # LED Keychain with CH32V003
 
-This project is inspired by these two YouTube videos: [first](https://www.youtube.com/watch?v=MnIGLcxYmrs&t=56s) and [second](https://www.youtube.com/watch?v=MnIGLcxYmrs&t=56s). But the main differences are that it uses CH32V003 microcontroller and all related files are open sourced too. You can also view how it works in SimulIDE.
+This project is inspired by these two YouTube videos: [first](https://www.youtube.com/watch?v=MnIGLcxYmrs&t=56s) and [second](https://www.youtube.com/watch?v=6DgWKBOdAS4). But the main differences are that it uses CH32V003 microcontroller and all related files are open sourced too. You can also view how it works in SimulIDE.
 
 Read [the article about this device (rus)](https://m039.ru/post/led-keychain) or [habr](https://habr.com/ru/articles/933680/).
 
