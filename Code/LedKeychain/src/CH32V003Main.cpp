@@ -27,7 +27,7 @@ int main() {
   ghostAnimation.init(app);
   textAnimation.init(app, u"Привет!!! ");
 
-  animationIndex = 0;
+  animationIndex = 1;
 
   while (true) {
     if (app.buttonWasPressed()) {
