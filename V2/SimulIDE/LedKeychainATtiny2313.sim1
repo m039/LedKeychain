@@ -22,7 +22,7 @@
 
 <item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,-56" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="MCU" CircId="tiny2313-19" mainComp="false" Show_id="true" Show_Val="false" Pos="-396,-60" rotation="0" hflip="1" vflip="1" label="tiny2313-19" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Code/LedKeychain/.pio/build/attiny2313/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+<item itemtype="MCU" CircId="tiny2313-19" mainComp="false" Show_id="true" Show_Val="false" Pos="-396,-60" rotation="0" hflip="1" vflip="1" label="tiny2313-19" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Code/LedKeychainATtiny2313/.pio/build/attiny2313/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
 
 <item itemtype="Connector" uid="Connector-18" startpinid="Resistor-9-lPin" endpinid="LedMatrix-1-pinCol7" pointList="-124,0,-124,-88,-116,-88" />
 

@@ -44,7 +44,7 @@ void setup()
 
 void loop()
 {
-    for (uint8_t i = 0; i < 6; i++)
+    for (uint8_t i = 0; i < 8; i++)
     {
         displayFrame(ghost_frames[i]);
         delay(150);
