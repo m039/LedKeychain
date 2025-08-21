@@ -1,0 +1,731 @@
+
+C:\Users\m039\Desktop\Code\LedKeychain\V2\Code\LedKeychain\.pio\build\attiny2313\firmware.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	38 c0       	rjmp	.+112    	; 0x72 <__ctors_end>
+   2:	5a c0       	rjmp	.+180    	; 0xb8 <__bad_interrupt>
+   4:	59 c0       	rjmp	.+178    	; 0xb8 <__bad_interrupt>
+   6:	58 c0       	rjmp	.+176    	; 0xb8 <__bad_interrupt>
+   8:	57 c0       	rjmp	.+174    	; 0xb8 <__bad_interrupt>
+   a:	56 c0       	rjmp	.+172    	; 0xb8 <__bad_interrupt>
+   c:	1f c2       	rjmp	.+1086   	; 0x44c <__vector_6>
+   e:	54 c0       	rjmp	.+168    	; 0xb8 <__bad_interrupt>
+  10:	53 c0       	rjmp	.+166    	; 0xb8 <__bad_interrupt>
+  12:	52 c0       	rjmp	.+164    	; 0xb8 <__bad_interrupt>
+  14:	51 c0       	rjmp	.+162    	; 0xb8 <__bad_interrupt>
+  16:	50 c0       	rjmp	.+160    	; 0xb8 <__bad_interrupt>
+  18:	4f c0       	rjmp	.+158    	; 0xb8 <__bad_interrupt>
+  1a:	4e c0       	rjmp	.+156    	; 0xb8 <__bad_interrupt>
+  1c:	4d c0       	rjmp	.+154    	; 0xb8 <__bad_interrupt>
+  1e:	4c c0       	rjmp	.+152    	; 0xb8 <__bad_interrupt>
+  20:	4b c0       	rjmp	.+150    	; 0xb8 <__bad_interrupt>
+  22:	4a c0       	rjmp	.+148    	; 0xb8 <__bad_interrupt>
+  24:	49 c0       	rjmp	.+146    	; 0xb8 <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+  26:	00 00       	nop
+  28:	3a 00       	.word	0x003a	; ????
+  2a:	37 00       	.word	0x0037	; ????
+  2c:	00 00       	nop
+  2e:	31 00       	.word	0x0031	; ????
+
+00000030 <port_to_output_PGM>:
+  30:	00 00 3b 00 38 00 00 00 32 00                       ..;.8...2.
+
+0000003a <digital_pin_to_timer_PGM>:
+  3a:	00 00 00 00 00 00 00 02 00 00 00 01 03 04 00 00     ................
+	...
+
+0000004c <digital_pin_to_port_PGM>:
+  4c:	04 04 01 01 04 04 04 04 04 02 02 02 02 02 02 02     ................
+  5c:	02 01                                               ..
+
+0000005e <digital_pin_to_bit_mask_PGM>:
+  5e:	01 02 02 01 04 08 10 20 40 01 02 04 08 10 20 40     ....... @..... @
+  6e:	80 04                                               ..
+
+00000070 <__ctors_start>:
+  70:	ca 02       	muls	r28, r26
+
+00000072 <__ctors_end>:
+  72:	11 24       	eor	r1, r1
+  74:	1f be       	out	0x3f, r1	; 63
+  76:	cf ed       	ldi	r28, 0xDF	; 223
+  78:	cd bf       	out	0x3d, r28	; 61
+
+0000007a <__do_copy_data>:
+  7a:	10 e0       	ldi	r17, 0x00	; 0
+  7c:	a0 e6       	ldi	r26, 0x60	; 96
+  7e:	b0 e0       	ldi	r27, 0x00	; 0
+  80:	e2 ec       	ldi	r30, 0xC2	; 194
+  82:	f5 e0       	ldi	r31, 0x05	; 5
+  84:	02 c0       	rjmp	.+4      	; 0x8a <__do_copy_data+0x10>
+  86:	05 90       	lpm	r0, Z+
+  88:	0d 92       	st	X+, r0
+  8a:	a8 39       	cpi	r26, 0x98	; 152
+  8c:	b1 07       	cpc	r27, r17
+  8e:	d9 f7       	brne	.-10     	; 0x86 <__do_copy_data+0xc>
+
+00000090 <__do_clear_bss>:
+  90:	20 e0       	ldi	r18, 0x00	; 0
+  92:	a8 e9       	ldi	r26, 0x98	; 152
+  94:	b0 e0       	ldi	r27, 0x00	; 0
+  96:	01 c0       	rjmp	.+2      	; 0x9a <.do_clear_bss_start>
+
+00000098 <.do_clear_bss_loop>:
+  98:	1d 92       	st	X+, r1
+
+0000009a <.do_clear_bss_start>:
+  9a:	a3 3c       	cpi	r26, 0xC3	; 195
+  9c:	b2 07       	cpc	r27, r18
+  9e:	e1 f7       	brne	.-8      	; 0x98 <.do_clear_bss_loop>
+
+000000a0 <__do_global_ctors>:
+  a0:	10 e0       	ldi	r17, 0x00	; 0
+  a2:	c9 e3       	ldi	r28, 0x39	; 57
+  a4:	d0 e0       	ldi	r29, 0x00	; 0
+  a6:	03 c0       	rjmp	.+6      	; 0xae <__do_global_ctors+0xe>
+  a8:	21 97       	sbiw	r28, 0x01	; 1
+  aa:	fe 01       	movw	r30, r28
+  ac:	82 d2       	rcall	.+1284   	; 0x5b2 <__tablejump2__>
+  ae:	c8 33       	cpi	r28, 0x38	; 56
+  b0:	d1 07       	cpc	r29, r17
+  b2:	d1 f7       	brne	.-12     	; 0xa8 <__do_global_ctors+0x8>
+  b4:	15 d2       	rcall	.+1066   	; 0x4e0 <main>
+  b6:	83 c2       	rjmp	.+1286   	; 0x5be <_exit>
+
+000000b8 <__bad_interrupt>:
+  b8:	a3 cf       	rjmp	.-186    	; 0x0 <__vectors>
+
+000000ba <LedMatrix::displayFrame(unsigned char const*) [clone .constprop.0]>:
+  ba:	ff 92       	push	r15
+  bc:	0f 93       	push	r16
+  be:	1f 93       	push	r17
+  c0:	cf 93       	push	r28
+  c2:	df 93       	push	r29
+  c4:	c7 eb       	ldi	r28, 0xB7	; 183
+  c6:	d0 e0       	ldi	r29, 0x00	; 0
+  c8:	70 e0       	ldi	r23, 0x00	; 0
+  ca:	60 e0       	ldi	r22, 0x00	; 0
+  cc:	01 e0       	ldi	r16, 0x01	; 1
+  ce:	10 e0       	ldi	r17, 0x00	; 0
+  d0:	98 01       	movw	r18, r16
+  d2:	06 2e       	mov	r0, r22
+  d4:	01 c0       	rjmp	.+2      	; 0xd8 <LedMatrix::displayFrame(unsigned char const*) [clone .constprop.0]+0x1e>
+  d6:	22 0f       	add	r18, r18
+  d8:	0a 94       	dec	r0
+  da:	ea f7       	brpl	.-6      	; 0xd6 <LedMatrix::displayFrame(unsigned char const*) [clone .constprop.0]+0x1c>
+  dc:	f2 2e       	mov	r15, r18
+  de:	32 2f       	mov	r19, r18
+  e0:	30 95       	com	r19
+  e2:	fc 01       	movw	r30, r24
+  e4:	b0 e0       	ldi	r27, 0x00	; 0
+  e6:	a0 e0       	ldi	r26, 0x00	; 0
+  e8:	21 81       	ldd	r18, Z+1	; 0x01
+  ea:	48 81       	ld	r20, Y
+  ec:	50 e0       	ldi	r21, 0x00	; 0
+  ee:	0a 2e       	mov	r0, r26
+  f0:	02 c0       	rjmp	.+4      	; 0xf6 <__stack+0x17>
+  f2:	55 95       	asr	r21
+  f4:	47 95       	ror	r20
+  f6:	0a 94       	dec	r0
+  f8:	e2 f7       	brpl	.-8      	; 0xf2 <__stack+0x13>
+  fa:	40 ff       	sbrs	r20, 0
+  fc:	13 c0       	rjmp	.+38     	; 0x124 <__stack+0x45>
+  fe:	2f 29       	or	r18, r15
+ 100:	21 83       	std	Z+1, r18	; 0x01
+ 102:	11 96       	adiw	r26, 0x01	; 1
+ 104:	31 96       	adiw	r30, 0x01	; 1
+ 106:	a8 30       	cpi	r26, 0x08	; 8
+ 108:	b1 05       	cpc	r27, r1
+ 10a:	71 f7       	brne	.-36     	; 0xe8 <__stack+0x9>
+ 10c:	6f 5f       	subi	r22, 0xFF	; 255
+ 10e:	7f 4f       	sbci	r23, 0xFF	; 255
+ 110:	21 96       	adiw	r28, 0x01	; 1
+ 112:	68 30       	cpi	r22, 0x08	; 8
+ 114:	71 05       	cpc	r23, r1
+ 116:	e1 f6       	brne	.-72     	; 0xd0 <LedMatrix::displayFrame(unsigned char const*) [clone .constprop.0]+0x16>
+ 118:	df 91       	pop	r29
+ 11a:	cf 91       	pop	r28
+ 11c:	1f 91       	pop	r17
+ 11e:	0f 91       	pop	r16
+ 120:	ff 90       	pop	r15
+ 122:	08 95       	ret
+ 124:	23 23       	and	r18, r19
+ 126:	ec cf       	rjmp	.-40     	; 0x100 <__stack+0x21>
+
+00000128 <Animation::init(App&)>:
+ 128:	fc 01       	movw	r30, r24
+ 12a:	73 83       	std	Z+3, r23	; 0x03
+ 12c:	62 83       	std	Z+2, r22	; 0x02
+ 12e:	08 95       	ret
+
+00000130 <digitalRead.constprop.9>:
+ 130:	86 b3       	in	r24, 0x16	; 22
+ 132:	08 2e       	mov	r0, r24
+ 134:	00 0c       	add	r0, r0
+ 136:	99 0b       	sbc	r25, r25
+ 138:	89 2f       	mov	r24, r25
+ 13a:	88 1f       	adc	r24, r24
+ 13c:	88 27       	eor	r24, r24
+ 13e:	88 1f       	adc	r24, r24
+ 140:	90 e0       	ldi	r25, 0x00	; 0
+ 142:	08 95       	ret
+
+00000144 <digitalWrite>:
+ 144:	87 fd       	sbrc	r24, 7
+ 146:	8f ef       	ldi	r24, 0xFF	; 255
+ 148:	90 e0       	ldi	r25, 0x00	; 0
+ 14a:	fc 01       	movw	r30, r24
+ 14c:	e6 5c       	subi	r30, 0xC6	; 198
+ 14e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 150:	34 91       	lpm	r19, Z
+ 152:	fc 01       	movw	r30, r24
+ 154:	e2 5a       	subi	r30, 0xA2	; 162
+ 156:	ff 4f       	sbci	r31, 0xFF	; 255
+ 158:	24 91       	lpm	r18, Z
+ 15a:	fc 01       	movw	r30, r24
+ 15c:	e4 5b       	subi	r30, 0xB4	; 180
+ 15e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 160:	e4 91       	lpm	r30, Z
+ 162:	ee 23       	and	r30, r30
+ 164:	b9 f0       	breq	.+46     	; 0x194 <digitalWrite+0x50>
+ 166:	33 23       	and	r19, r19
+ 168:	29 f0       	breq	.+10     	; 0x174 <digitalWrite+0x30>
+ 16a:	31 30       	cpi	r19, 0x01	; 1
+ 16c:	a1 f4       	brne	.+40     	; 0x196 <digitalWrite+0x52>
+ 16e:	80 b7       	in	r24, 0x30	; 48
+ 170:	8f 77       	andi	r24, 0x7F	; 127
+ 172:	80 bf       	out	0x30, r24	; 48
+ 174:	f0 e0       	ldi	r31, 0x00	; 0
+ 176:	ee 0f       	add	r30, r30
+ 178:	ff 1f       	adc	r31, r31
+ 17a:	e0 5d       	subi	r30, 0xD0	; 208
+ 17c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 17e:	a5 91       	lpm	r26, Z+
+ 180:	b4 91       	lpm	r27, Z
+ 182:	8f b7       	in	r24, 0x3f	; 63
+ 184:	61 11       	cpse	r22, r1
+ 186:	17 c0       	rjmp	.+46     	; 0x1b6 <digitalWrite+0x72>
+ 188:	f8 94       	cli
+ 18a:	ec 91       	ld	r30, X
+ 18c:	20 95       	com	r18
+ 18e:	2e 23       	and	r18, r30
+ 190:	2c 93       	st	X, r18
+ 192:	8f bf       	out	0x3f, r24	; 63
+ 194:	08 95       	ret
+ 196:	32 30       	cpi	r19, 0x02	; 2
+ 198:	19 f4       	brne	.+6      	; 0x1a0 <digitalWrite+0x5c>
+ 19a:	80 b7       	in	r24, 0x30	; 48
+ 19c:	8f 7d       	andi	r24, 0xDF	; 223
+ 19e:	e9 cf       	rjmp	.-46     	; 0x172 <digitalWrite+0x2e>
+ 1a0:	33 30       	cpi	r19, 0x03	; 3
+ 1a2:	21 f4       	brne	.+8      	; 0x1ac <digitalWrite+0x68>
+ 1a4:	8f b5       	in	r24, 0x2f	; 47
+ 1a6:	8f 77       	andi	r24, 0x7F	; 127
+ 1a8:	8f bd       	out	0x2f, r24	; 47
+ 1aa:	e4 cf       	rjmp	.-56     	; 0x174 <digitalWrite+0x30>
+ 1ac:	34 30       	cpi	r19, 0x04	; 4
+ 1ae:	11 f7       	brne	.-60     	; 0x174 <digitalWrite+0x30>
+ 1b0:	8f b5       	in	r24, 0x2f	; 47
+ 1b2:	8f 7d       	andi	r24, 0xDF	; 223
+ 1b4:	f9 cf       	rjmp	.-14     	; 0x1a8 <digitalWrite+0x64>
+ 1b6:	f8 94       	cli
+ 1b8:	ec 91       	ld	r30, X
+ 1ba:	2e 2b       	or	r18, r30
+ 1bc:	e9 cf       	rjmp	.-46     	; 0x190 <digitalWrite+0x4c>
+
+000001be <LedMatrix::refreshScreen()>:
+ 1be:	5f 92       	push	r5
+ 1c0:	6f 92       	push	r6
+ 1c2:	7f 92       	push	r7
+ 1c4:	8f 92       	push	r8
+ 1c6:	9f 92       	push	r9
+ 1c8:	af 92       	push	r10
+ 1ca:	bf 92       	push	r11
+ 1cc:	cf 92       	push	r12
+ 1ce:	df 92       	push	r13
+ 1d0:	ef 92       	push	r14
+ 1d2:	ff 92       	push	r15
+ 1d4:	0f 93       	push	r16
+ 1d6:	1f 93       	push	r17
+ 1d8:	cf 93       	push	r28
+ 1da:	df 93       	push	r29
+ 1dc:	ec 01       	movw	r28, r24
+ 1de:	89 85       	ldd	r24, Y+9	; 0x09
+ 1e0:	9a 85       	ldd	r25, Y+10	; 0x0a
+ 1e2:	01 96       	adiw	r24, 0x01	; 1
+ 1e4:	81 31       	cpi	r24, 0x11	; 17
+ 1e6:	91 05       	cpc	r25, r1
+ 1e8:	08 f0       	brcs	.+2      	; 0x1ec <LedMatrix::refreshScreen()+0x2e>
+ 1ea:	59 c0       	rjmp	.+178    	; 0x29e <LedMatrix::refreshScreen()+0xe0>
+ 1ec:	9a 87       	std	Y+10, r25	; 0x0a
+ 1ee:	89 87       	std	Y+9, r24	; 0x09
+ 1f0:	28 81       	ld	r18, Y
+ 1f2:	89 85       	ldd	r24, Y+9	; 0x09
+ 1f4:	9a 85       	ldd	r25, Y+10	; 0x0a
+ 1f6:	28 17       	cp	r18, r24
+ 1f8:	19 06       	cpc	r1, r25
+ 1fa:	09 f0       	breq	.+2      	; 0x1fe <LedMatrix::refreshScreen()+0x40>
+ 1fc:	08 f4       	brcc	.+2      	; 0x200 <LedMatrix::refreshScreen()+0x42>
+ 1fe:	3f c0       	rjmp	.+126    	; 0x27e <LedMatrix::refreshScreen()+0xc0>
+ 200:	98 e7       	ldi	r25, 0x78	; 120
+ 202:	e9 2e       	mov	r14, r25
+ 204:	90 e0       	ldi	r25, 0x00	; 0
+ 206:	f9 2e       	mov	r15, r25
+ 208:	10 e0       	ldi	r17, 0x00	; 0
+ 20a:	00 e0       	ldi	r16, 0x00	; 0
+ 20c:	4e 01       	movw	r8, r28
+ 20e:	89 e0       	ldi	r24, 0x09	; 9
+ 210:	88 0e       	add	r8, r24
+ 212:	91 1c       	adc	r9, r1
+ 214:	f7 01       	movw	r30, r14
+ 216:	60 80       	ld	r6, Z
+ 218:	f2 e0       	ldi	r31, 0x02	; 2
+ 21a:	ef 0e       	add	r14, r31
+ 21c:	f1 1c       	adc	r15, r1
+ 21e:	60 e0       	ldi	r22, 0x00	; 0
+ 220:	86 2d       	mov	r24, r6
+ 222:	90 df       	rcall	.-224    	; 0x144 <digitalWrite>
+ 224:	6e 01       	movw	r12, r28
+ 226:	8f ef       	ldi	r24, 0xFF	; 255
+ 228:	c8 1a       	sub	r12, r24
+ 22a:	d8 0a       	sbc	r13, r24
+ 22c:	88 e8       	ldi	r24, 0x88	; 136
+ 22e:	a8 2e       	mov	r10, r24
+ 230:	80 e0       	ldi	r24, 0x00	; 0
+ 232:	b8 2e       	mov	r11, r24
+ 234:	f6 01       	movw	r30, r12
+ 236:	61 91       	ld	r22, Z+
+ 238:	6f 01       	movw	r12, r30
+ 23a:	70 e0       	ldi	r23, 0x00	; 0
+ 23c:	00 2e       	mov	r0, r16
+ 23e:	02 c0       	rjmp	.+4      	; 0x244 <LedMatrix::refreshScreen()+0x86>
+ 240:	75 95       	asr	r23
+ 242:	67 95       	ror	r22
+ 244:	0a 94       	dec	r0
+ 246:	e2 f7       	brpl	.-8      	; 0x240 <LedMatrix::refreshScreen()+0x82>
+ 248:	f6 2f       	mov	r31, r22
+ 24a:	f1 70       	andi	r31, 0x01	; 1
+ 24c:	7f 2e       	mov	r7, r31
+ 24e:	f5 01       	movw	r30, r10
+ 250:	50 80       	ld	r5, Z
+ 252:	f2 e0       	ldi	r31, 0x02	; 2
+ 254:	af 0e       	add	r10, r31
+ 256:	b1 1c       	adc	r11, r1
+ 258:	67 2d       	mov	r22, r7
+ 25a:	85 2d       	mov	r24, r5
+ 25c:	73 df       	rcall	.-282    	; 0x144 <digitalWrite>
+ 25e:	77 20       	and	r7, r7
+ 260:	19 f0       	breq	.+6      	; 0x268 <LedMatrix::refreshScreen()+0xaa>
+ 262:	60 e0       	ldi	r22, 0x00	; 0
+ 264:	85 2d       	mov	r24, r5
+ 266:	6e df       	rcall	.-292    	; 0x144 <digitalWrite>
+ 268:	c8 14       	cp	r12, r8
+ 26a:	d9 04       	cpc	r13, r9
+ 26c:	19 f7       	brne	.-58     	; 0x234 <LedMatrix::refreshScreen()+0x76>
+ 26e:	61 e0       	ldi	r22, 0x01	; 1
+ 270:	86 2d       	mov	r24, r6
+ 272:	68 df       	rcall	.-304    	; 0x144 <digitalWrite>
+ 274:	0f 5f       	subi	r16, 0xFF	; 255
+ 276:	1f 4f       	sbci	r17, 0xFF	; 255
+ 278:	08 30       	cpi	r16, 0x08	; 8
+ 27a:	11 05       	cpc	r17, r1
+ 27c:	59 f6       	brne	.-106    	; 0x214 <LedMatrix::refreshScreen()+0x56>
+ 27e:	df 91       	pop	r29
+ 280:	cf 91       	pop	r28
+ 282:	1f 91       	pop	r17
+ 284:	0f 91       	pop	r16
+ 286:	ff 90       	pop	r15
+ 288:	ef 90       	pop	r14
+ 28a:	df 90       	pop	r13
+ 28c:	cf 90       	pop	r12
+ 28e:	bf 90       	pop	r11
+ 290:	af 90       	pop	r10
+ 292:	9f 90       	pop	r9
+ 294:	8f 90       	pop	r8
+ 296:	7f 90       	pop	r7
+ 298:	6f 90       	pop	r6
+ 29a:	5f 90       	pop	r5
+ 29c:	08 95       	ret
+ 29e:	1a 86       	std	Y+10, r1	; 0x0a
+ 2a0:	19 86       	std	Y+9, r1	; 0x09
+ 2a2:	a6 cf       	rjmp	.-180    	; 0x1f0 <LedMatrix::refreshScreen()+0x32>
+
+000002a4 <App::delay(unsigned long) [clone .constprop.3]>:
+ 2a4:	8f 92       	push	r8
+ 2a6:	9f 92       	push	r9
+ 2a8:	af 92       	push	r10
+ 2aa:	bf 92       	push	r11
+ 2ac:	df 92       	push	r13
+ 2ae:	ef 92       	push	r14
+ 2b0:	ff 92       	push	r15
+ 2b2:	0f 93       	push	r16
+ 2b4:	1f 93       	push	r17
+ 2b6:	cf 93       	push	r28
+ 2b8:	df 93       	push	r29
+ 2ba:	ec 01       	movw	r28, r24
+ 2bc:	1e 82       	std	Y+6, r1	; 0x06
+ 2be:	1f 82       	std	Y+7, r1	; 0x07
+ 2c0:	18 86       	std	Y+8, r1	; 0x08
+ 2c2:	19 86       	std	Y+9, r1	; 0x09
+ 2c4:	2f b7       	in	r18, 0x3f	; 63
+ 2c6:	f8 94       	cli
+ 2c8:	80 91 bf 00 	lds	r24, 0x00BF	; 0x8000bf <millis_timer_millis>
+ 2cc:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <millis_timer_millis+0x1>
+ 2d0:	a0 91 c1 00 	lds	r26, 0x00C1	; 0x8000c1 <millis_timer_millis+0x2>
+ 2d4:	b0 91 c2 00 	lds	r27, 0x00C2	; 0x8000c2 <millis_timer_millis+0x3>
+ 2d8:	2f bf       	out	0x3f, r18	; 63
+ 2da:	8a 83       	std	Y+2, r24	; 0x02
+ 2dc:	9b 83       	std	Y+3, r25	; 0x03
+ 2de:	ac 83       	std	Y+4, r26	; 0x04
+ 2e0:	bd 83       	std	Y+5, r27	; 0x05
+ 2e2:	7e 01       	movw	r14, r28
+ 2e4:	8a e0       	ldi	r24, 0x0A	; 10
+ 2e6:	e8 0e       	add	r14, r24
+ 2e8:	f1 1c       	adc	r15, r1
+ 2ea:	dd 24       	eor	r13, r13
+ 2ec:	d3 94       	inc	r13
+ 2ee:	04 ec       	ldi	r16, 0xC4	; 196
+ 2f0:	10 e0       	ldi	r17, 0x00	; 0
+ 2f2:	2f b7       	in	r18, 0x3f	; 63
+ 2f4:	f8 94       	cli
+ 2f6:	80 91 bf 00 	lds	r24, 0x00BF	; 0x8000bf <millis_timer_millis>
+ 2fa:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <millis_timer_millis+0x1>
+ 2fe:	a0 91 c1 00 	lds	r26, 0x00C1	; 0x8000c1 <millis_timer_millis+0x2>
+ 302:	b0 91 c2 00 	lds	r27, 0x00C2	; 0x8000c2 <millis_timer_millis+0x3>
+ 306:	2f bf       	out	0x3f, r18	; 63
+ 308:	4a 81       	ldd	r20, Y+2	; 0x02
+ 30a:	5b 81       	ldd	r21, Y+3	; 0x03
+ 30c:	6c 81       	ldd	r22, Y+4	; 0x04
+ 30e:	7d 81       	ldd	r23, Y+5	; 0x05
+ 310:	8a 83       	std	Y+2, r24	; 0x02
+ 312:	9b 83       	std	Y+3, r25	; 0x03
+ 314:	ac 83       	std	Y+4, r26	; 0x04
+ 316:	bd 83       	std	Y+5, r27	; 0x05
+ 318:	8e 80       	ldd	r8, Y+6	; 0x06
+ 31a:	9f 80       	ldd	r9, Y+7	; 0x07
+ 31c:	a8 84       	ldd	r10, Y+8	; 0x08
+ 31e:	b9 84       	ldd	r11, Y+9	; 0x09
+ 320:	88 0d       	add	r24, r8
+ 322:	99 1d       	adc	r25, r9
+ 324:	aa 1d       	adc	r26, r10
+ 326:	bb 1d       	adc	r27, r11
+ 328:	84 1b       	sub	r24, r20
+ 32a:	95 0b       	sbc	r25, r21
+ 32c:	a6 0b       	sbc	r26, r22
+ 32e:	b7 0b       	sbc	r27, r23
+ 330:	8e 83       	std	Y+6, r24	; 0x06
+ 332:	9f 83       	std	Y+7, r25	; 0x07
+ 334:	a8 87       	std	Y+8, r26	; 0x08
+ 336:	b9 87       	std	Y+9, r27	; 0x09
+ 338:	87 39       	cpi	r24, 0x97	; 151
+ 33a:	91 05       	cpc	r25, r1
+ 33c:	a1 05       	cpc	r26, r1
+ 33e:	b1 05       	cpc	r27, r1
+ 340:	a0 f4       	brcc	.+40     	; 0x36a <App::delay(unsigned long) [clone .constprop.3]+0xc6>
+ 342:	89 81       	ldd	r24, Y+1	; 0x01
+ 344:	81 11       	cpse	r24, r1
+ 346:	11 c0       	rjmp	.+34     	; 0x36a <App::delay(unsigned long) [clone .constprop.3]+0xc6>
+ 348:	c7 01       	movw	r24, r14
+ 34a:	39 df       	rcall	.-398    	; 0x1be <LedMatrix::refreshScreen()>
+ 34c:	f1 de       	rcall	.-542    	; 0x130 <digitalRead.constprop.9>
+ 34e:	89 2b       	or	r24, r25
+ 350:	29 f4       	brne	.+10     	; 0x35c <App::delay(unsigned long) [clone .constprop.3]+0xb8>
+ 352:	89 81       	ldd	r24, Y+1	; 0x01
+ 354:	81 11       	cpse	r24, r1
+ 356:	02 c0       	rjmp	.+4      	; 0x35c <App::delay(unsigned long) [clone .constprop.3]+0xb8>
+ 358:	d8 82       	st	Y, r13
+ 35a:	d9 82       	std	Y+1, r13	; 0x01
+ 35c:	89 81       	ldd	r24, Y+1	; 0x01
+ 35e:	81 11       	cpse	r24, r1
+ 360:	04 c0       	rjmp	.+8      	; 0x36a <App::delay(unsigned long) [clone .constprop.3]+0xc6>
+ 362:	c8 01       	movw	r24, r16
+ 364:	01 97       	sbiw	r24, 0x01	; 1
+ 366:	f1 f7       	brne	.-4      	; 0x364 <App::delay(unsigned long) [clone .constprop.3]+0xc0>
+ 368:	c4 cf       	rjmp	.-120    	; 0x2f2 <App::delay(unsigned long) [clone .constprop.3]+0x4e>
+ 36a:	df 91       	pop	r29
+ 36c:	cf 91       	pop	r28
+ 36e:	1f 91       	pop	r17
+ 370:	0f 91       	pop	r16
+ 372:	ff 90       	pop	r15
+ 374:	ef 90       	pop	r14
+ 376:	df 90       	pop	r13
+ 378:	bf 90       	pop	r11
+ 37a:	af 90       	pop	r10
+ 37c:	9f 90       	pop	r9
+ 37e:	8f 90       	pop	r8
+ 380:	08 95       	ret
+
+00000382 <GhostAnimation::animate()>:
+ 382:	1f 93       	push	r17
+ 384:	cf 93       	push	r28
+ 386:	df 93       	push	r29
+ 388:	ec 01       	movw	r28, r24
+ 38a:	88 e0       	ldi	r24, 0x08	; 8
+ 38c:	e8 e6       	ldi	r30, 0x68	; 104
+ 38e:	f0 e0       	ldi	r31, 0x00	; 0
+ 390:	a7 eb       	ldi	r26, 0xB7	; 183
+ 392:	b0 e0       	ldi	r27, 0x00	; 0
+ 394:	01 90       	ld	r0, Z+
+ 396:	0d 92       	st	X+, r0
+ 398:	8a 95       	dec	r24
+ 39a:	e1 f7       	brne	.-8      	; 0x394 <GhostAnimation::animate()+0x12>
+ 39c:	8a 81       	ldd	r24, Y+2	; 0x02
+ 39e:	9b 81       	ldd	r25, Y+3	; 0x03
+ 3a0:	0a 96       	adiw	r24, 0x0a	; 10
+ 3a2:	8b de       	rcall	.-746    	; 0xba <LedMatrix::displayFrame(unsigned char const*) [clone .constprop.0]>
+ 3a4:	ea 81       	ldd	r30, Y+2	; 0x02
+ 3a6:	fb 81       	ldd	r31, Y+3	; 0x03
+ 3a8:	1f e0       	ldi	r17, 0x0F	; 15
+ 3aa:	12 87       	std	Z+10, r17	; 0x0a
+ 3ac:	14 8a       	std	Z+20, r1	; 0x14
+ 3ae:	13 8a       	std	Z+19, r1	; 0x13
+ 3b0:	8a 81       	ldd	r24, Y+2	; 0x02
+ 3b2:	9b 81       	ldd	r25, Y+3	; 0x03
+ 3b4:	77 df       	rcall	.-274    	; 0x2a4 <App::delay(unsigned long) [clone .constprop.3]>
+ 3b6:	88 e0       	ldi	r24, 0x08	; 8
+ 3b8:	e0 e6       	ldi	r30, 0x60	; 96
+ 3ba:	f0 e0       	ldi	r31, 0x00	; 0
+ 3bc:	a7 eb       	ldi	r26, 0xB7	; 183
+ 3be:	b0 e0       	ldi	r27, 0x00	; 0
+ 3c0:	01 90       	ld	r0, Z+
+ 3c2:	0d 92       	st	X+, r0
+ 3c4:	8a 95       	dec	r24
+ 3c6:	e1 f7       	brne	.-8      	; 0x3c0 <GhostAnimation::animate()+0x3e>
+ 3c8:	8a 81       	ldd	r24, Y+2	; 0x02
+ 3ca:	9b 81       	ldd	r25, Y+3	; 0x03
+ 3cc:	0a 96       	adiw	r24, 0x0a	; 10
+ 3ce:	75 de       	rcall	.-790    	; 0xba <LedMatrix::displayFrame(unsigned char const*) [clone .constprop.0]>
+ 3d0:	ea 81       	ldd	r30, Y+2	; 0x02
+ 3d2:	fb 81       	ldd	r31, Y+3	; 0x03
+ 3d4:	12 87       	std	Z+10, r17	; 0x0a
+ 3d6:	14 8a       	std	Z+20, r1	; 0x14
+ 3d8:	13 8a       	std	Z+19, r1	; 0x13
+ 3da:	8a 81       	ldd	r24, Y+2	; 0x02
+ 3dc:	9b 81       	ldd	r25, Y+3	; 0x03
+ 3de:	df 91       	pop	r29
+ 3e0:	cf 91       	pop	r28
+ 3e2:	1f 91       	pop	r17
+ 3e4:	5f cf       	rjmp	.-322    	; 0x2a4 <App::delay(unsigned long) [clone .constprop.3]>
+
+000003e6 <pinMode>:
+ 3e6:	cf 93       	push	r28
+ 3e8:	df 93       	push	r29
+ 3ea:	87 fd       	sbrc	r24, 7
+ 3ec:	8f ef       	ldi	r24, 0xFF	; 255
+ 3ee:	90 e0       	ldi	r25, 0x00	; 0
+ 3f0:	fc 01       	movw	r30, r24
+ 3f2:	e2 5a       	subi	r30, 0xA2	; 162
+ 3f4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3f6:	24 91       	lpm	r18, Z
+ 3f8:	84 5b       	subi	r24, 0xB4	; 180
+ 3fa:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3fc:	fc 01       	movw	r30, r24
+ 3fe:	84 91       	lpm	r24, Z
+ 400:	88 23       	and	r24, r24
+ 402:	d1 f0       	breq	.+52     	; 0x438 <__LOCK_REGION_LENGTH__+0x38>
+ 404:	90 e0       	ldi	r25, 0x00	; 0
+ 406:	88 0f       	add	r24, r24
+ 408:	99 1f       	adc	r25, r25
+ 40a:	fc 01       	movw	r30, r24
+ 40c:	ea 5d       	subi	r30, 0xDA	; 218
+ 40e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 410:	a5 91       	lpm	r26, Z+
+ 412:	b4 91       	lpm	r27, Z
+ 414:	fc 01       	movw	r30, r24
+ 416:	e0 5d       	subi	r30, 0xD0	; 208
+ 418:	ff 4f       	sbci	r31, 0xFF	; 255
+ 41a:	c5 91       	lpm	r28, Z+
+ 41c:	d4 91       	lpm	r29, Z
+ 41e:	62 30       	cpi	r22, 0x02	; 2
+ 420:	71 f4       	brne	.+28     	; 0x43e <__LOCK_REGION_LENGTH__+0x3e>
+ 422:	9f b7       	in	r25, 0x3f	; 63
+ 424:	f8 94       	cli
+ 426:	3c 91       	ld	r19, X
+ 428:	82 2f       	mov	r24, r18
+ 42a:	80 95       	com	r24
+ 42c:	83 23       	and	r24, r19
+ 42e:	8c 93       	st	X, r24
+ 430:	e8 81       	ld	r30, Y
+ 432:	2e 2b       	or	r18, r30
+ 434:	28 83       	st	Y, r18
+ 436:	9f bf       	out	0x3f, r25	; 63
+ 438:	df 91       	pop	r29
+ 43a:	cf 91       	pop	r28
+ 43c:	08 95       	ret
+ 43e:	8f b7       	in	r24, 0x3f	; 63
+ 440:	f8 94       	cli
+ 442:	ec 91       	ld	r30, X
+ 444:	2e 2b       	or	r18, r30
+ 446:	2c 93       	st	X, r18
+ 448:	8f bf       	out	0x3f, r24	; 63
+ 44a:	f6 cf       	rjmp	.-20     	; 0x438 <__LOCK_REGION_LENGTH__+0x38>
+
+0000044c <__vector_6>:
+ 44c:	1f 92       	push	r1
+ 44e:	0f 92       	push	r0
+ 450:	0f b6       	in	r0, 0x3f	; 63
+ 452:	0f 92       	push	r0
+ 454:	11 24       	eor	r1, r1
+ 456:	2f 93       	push	r18
+ 458:	3f 93       	push	r19
+ 45a:	8f 93       	push	r24
+ 45c:	9f 93       	push	r25
+ 45e:	af 93       	push	r26
+ 460:	bf 93       	push	r27
+ 462:	80 91 bf 00 	lds	r24, 0x00BF	; 0x8000bf <millis_timer_millis>
+ 466:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <millis_timer_millis+0x1>
+ 46a:	a0 91 c1 00 	lds	r26, 0x00C1	; 0x8000c1 <millis_timer_millis+0x2>
+ 46e:	b0 91 c2 00 	lds	r27, 0x00C2	; 0x8000c2 <millis_timer_millis+0x3>
+ 472:	30 91 b6 00 	lds	r19, 0x00B6	; 0x8000b6 <millis_timer_fract>
+ 476:	26 e0       	ldi	r18, 0x06	; 6
+ 478:	23 0f       	add	r18, r19
+ 47a:	2d 37       	cpi	r18, 0x7D	; 125
+ 47c:	68 f1       	brcs	.+90     	; 0x4d8 <__vector_6+0x8c>
+ 47e:	29 e8       	ldi	r18, 0x89	; 137
+ 480:	23 0f       	add	r18, r19
+ 482:	03 96       	adiw	r24, 0x03	; 3
+ 484:	a1 1d       	adc	r26, r1
+ 486:	b1 1d       	adc	r27, r1
+ 488:	20 93 b6 00 	sts	0x00B6, r18	; 0x8000b6 <millis_timer_fract>
+ 48c:	80 93 bf 00 	sts	0x00BF, r24	; 0x8000bf <millis_timer_millis>
+ 490:	90 93 c0 00 	sts	0x00C0, r25	; 0x8000c0 <millis_timer_millis+0x1>
+ 494:	a0 93 c1 00 	sts	0x00C1, r26	; 0x8000c1 <millis_timer_millis+0x2>
+ 498:	b0 93 c2 00 	sts	0x00C2, r27	; 0x8000c2 <millis_timer_millis+0x3>
+ 49c:	80 91 b2 00 	lds	r24, 0x00B2	; 0x8000b2 <millis_timer_overflow_count>
+ 4a0:	90 91 b3 00 	lds	r25, 0x00B3	; 0x8000b3 <millis_timer_overflow_count+0x1>
+ 4a4:	a0 91 b4 00 	lds	r26, 0x00B4	; 0x8000b4 <millis_timer_overflow_count+0x2>
+ 4a8:	b0 91 b5 00 	lds	r27, 0x00B5	; 0x8000b5 <millis_timer_overflow_count+0x3>
+ 4ac:	01 96       	adiw	r24, 0x01	; 1
+ 4ae:	a1 1d       	adc	r26, r1
+ 4b0:	b1 1d       	adc	r27, r1
+ 4b2:	80 93 b2 00 	sts	0x00B2, r24	; 0x8000b2 <millis_timer_overflow_count>
+ 4b6:	90 93 b3 00 	sts	0x00B3, r25	; 0x8000b3 <millis_timer_overflow_count+0x1>
+ 4ba:	a0 93 b4 00 	sts	0x00B4, r26	; 0x8000b4 <millis_timer_overflow_count+0x2>
+ 4be:	b0 93 b5 00 	sts	0x00B5, r27	; 0x8000b5 <millis_timer_overflow_count+0x3>
+ 4c2:	bf 91       	pop	r27
+ 4c4:	af 91       	pop	r26
+ 4c6:	9f 91       	pop	r25
+ 4c8:	8f 91       	pop	r24
+ 4ca:	3f 91       	pop	r19
+ 4cc:	2f 91       	pop	r18
+ 4ce:	0f 90       	pop	r0
+ 4d0:	0f be       	out	0x3f, r0	; 63
+ 4d2:	0f 90       	pop	r0
+ 4d4:	1f 90       	pop	r1
+ 4d6:	18 95       	reti
+ 4d8:	02 96       	adiw	r24, 0x02	; 2
+ 4da:	a1 1d       	adc	r26, r1
+ 4dc:	b1 1d       	adc	r27, r1
+ 4de:	d4 cf       	rjmp	.-88     	; 0x488 <__vector_6+0x3c>
+
+000004e0 <main>:
+ 4e0:	83 e0       	ldi	r24, 0x03	; 3
+ 4e2:	80 bf       	out	0x30, r24	; 48
+ 4e4:	83 bf       	out	0x33, r24	; 51
+ 4e6:	78 94       	sei
+ 4e8:	89 b7       	in	r24, 0x39	; 57
+ 4ea:	82 60       	ori	r24, 0x02	; 2
+ 4ec:	89 bf       	out	0x39, r24	; 57
+ 4ee:	62 e0       	ldi	r22, 0x02	; 2
+ 4f0:	80 e1       	ldi	r24, 0x10	; 16
+ 4f2:	79 df       	rcall	.-270    	; 0x3e6 <pinMode>
+ 4f4:	c8 e8       	ldi	r28, 0x88	; 136
+ 4f6:	d0 e0       	ldi	r29, 0x00	; 0
+ 4f8:	08 e7       	ldi	r16, 0x78	; 120
+ 4fa:	10 e0       	ldi	r17, 0x00	; 0
+ 4fc:	88 e9       	ldi	r24, 0x98	; 152
+ 4fe:	c8 2e       	mov	r12, r24
+ 500:	80 e0       	ldi	r24, 0x00	; 0
+ 502:	d8 2e       	mov	r13, r24
+ 504:	e8 80       	ld	r14, Y
+ 506:	22 96       	adiw	r28, 0x02	; 2
+ 508:	61 e0       	ldi	r22, 0x01	; 1
+ 50a:	8e 2d       	mov	r24, r14
+ 50c:	6c df       	rcall	.-296    	; 0x3e6 <pinMode>
+ 50e:	f8 01       	movw	r30, r16
+ 510:	f0 80       	ld	r15, Z
+ 512:	0e 5f       	subi	r16, 0xFE	; 254
+ 514:	1f 4f       	sbci	r17, 0xFF	; 255
+ 516:	61 e0       	ldi	r22, 0x01	; 1
+ 518:	8f 2d       	mov	r24, r15
+ 51a:	65 df       	rcall	.-310    	; 0x3e6 <pinMode>
+ 51c:	60 e0       	ldi	r22, 0x00	; 0
+ 51e:	8e 2d       	mov	r24, r14
+ 520:	11 de       	rcall	.-990    	; 0x144 <digitalWrite>
+ 522:	61 e0       	ldi	r22, 0x01	; 1
+ 524:	8f 2d       	mov	r24, r15
+ 526:	0e de       	rcall	.-996    	; 0x144 <digitalWrite>
+ 528:	cc 16       	cp	r12, r28
+ 52a:	dd 06       	cpc	r13, r29
+ 52c:	59 f7       	brne	.-42     	; 0x504 <main+0x24>
+ 52e:	ed e9       	ldi	r30, 0x9D	; 157
+ 530:	f0 e0       	ldi	r31, 0x00	; 0
+ 532:	8f ef       	ldi	r24, 0xFF	; 255
+ 534:	83 87       	std	Z+11, r24	; 0x0b
+ 536:	31 96       	adiw	r30, 0x01	; 1
+ 538:	90 e0       	ldi	r25, 0x00	; 0
+ 53a:	e5 3a       	cpi	r30, 0xA5	; 165
+ 53c:	f9 07       	cpc	r31, r25
+ 53e:	d1 f7       	brne	.-12     	; 0x534 <main+0x54>
+ 540:	8d e9       	ldi	r24, 0x9D	; 157
+ 542:	90 e0       	ldi	r25, 0x00	; 0
+ 544:	90 93 9b 00 	sts	0x009B, r25	; 0x80009b <__data_end+0x3>
+ 548:	80 93 9a 00 	sts	0x009A, r24	; 0x80009a <__data_end+0x2>
+ 54c:	81 e0       	ldi	r24, 0x01	; 1
+ 54e:	80 93 9c 00 	sts	0x009C, r24	; 0x80009c <animationIndex>
+ 552:	c1 e0       	ldi	r28, 0x01	; 1
+ 554:	80 91 9e 00 	lds	r24, 0x009E	; 0x80009e <app+0x1>
+ 558:	81 11       	cpse	r24, r1
+ 55a:	0e c0       	rjmp	.+28     	; 0x578 <main+0x98>
+ 55c:	87 ea       	ldi	r24, 0xA7	; 167
+ 55e:	90 e0       	ldi	r25, 0x00	; 0
+ 560:	2e de       	rcall	.-932    	; 0x1be <LedMatrix::refreshScreen()>
+ 562:	e6 dd       	rcall	.-1076   	; 0x130 <digitalRead.constprop.9>
+ 564:	89 2b       	or	r24, r25
+ 566:	41 f4       	brne	.+16     	; 0x578 <main+0x98>
+ 568:	80 91 9e 00 	lds	r24, 0x009E	; 0x80009e <app+0x1>
+ 56c:	81 11       	cpse	r24, r1
+ 56e:	04 c0       	rjmp	.+8      	; 0x578 <main+0x98>
+ 570:	c0 93 9d 00 	sts	0x009D, r28	; 0x80009d <app>
+ 574:	c0 93 9e 00 	sts	0x009E, r28	; 0x80009e <app+0x1>
+ 578:	db dd       	rcall	.-1098   	; 0x130 <digitalRead.constprop.9>
+ 57a:	01 97       	sbiw	r24, 0x01	; 1
+ 57c:	29 f4       	brne	.+10     	; 0x588 <main+0xa8>
+ 57e:	80 91 9e 00 	lds	r24, 0x009E	; 0x80009e <app+0x1>
+ 582:	81 11       	cpse	r24, r1
+ 584:	10 92 9e 00 	sts	0x009E, r1	; 0x80009e <app+0x1>
+ 588:	10 92 9d 00 	sts	0x009D, r1	; 0x80009d <app>
+ 58c:	88 e9       	ldi	r24, 0x98	; 152
+ 58e:	90 e0       	ldi	r25, 0x00	; 0
+ 590:	f8 de       	rcall	.-528    	; 0x382 <GhostAnimation::animate()>
+ 592:	e0 cf       	rjmp	.-64     	; 0x554 <main+0x74>
+
+00000594 <_GLOBAL__sub_I_app>:
+ 594:	10 92 a3 00 	sts	0x00A3, r1	; 0x8000a3 <app+0x6>
+ 598:	10 92 a4 00 	sts	0x00A4, r1	; 0x8000a4 <app+0x7>
+ 59c:	10 92 a5 00 	sts	0x00A5, r1	; 0x8000a5 <app+0x8>
+ 5a0:	10 92 a6 00 	sts	0x00A6, r1	; 0x8000a6 <app+0x9>
+ 5a4:	84 e7       	ldi	r24, 0x74	; 116
+ 5a6:	90 e0       	ldi	r25, 0x00	; 0
+ 5a8:	90 93 99 00 	sts	0x0099, r25	; 0x800099 <__data_end+0x1>
+ 5ac:	80 93 98 00 	sts	0x0098, r24	; 0x800098 <__data_end>
+ 5b0:	08 95       	ret
+
+000005b2 <__tablejump2__>:
+ 5b2:	ee 0f       	add	r30, r30
+ 5b4:	ff 1f       	adc	r31, r31
+ 5b6:	05 90       	lpm	r0, Z+
+ 5b8:	f4 91       	lpm	r31, Z
+ 5ba:	e0 2d       	mov	r30, r0
+ 5bc:	09 94       	ijmp
+
+000005be <_exit>:
+ 5be:	f8 94       	cli
+
+000005c0 <__stop_program>:
+ 5c0:	ff cf       	rjmp	.-2      	; 0x5c0 <__stop_program>

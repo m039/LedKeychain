@@ -1394,9 +1394,7 @@ const long scrollDelay = 100; // adjust scrolling speed
 
 #define bitRead(value, bit) (((value) >> (bit)) & 0x01)
 
-#ifndef bitWrite
 #define bitWrite(value, bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))
-#endif
 
 #define bitSet(value, bit) ((value) |= (1UL << (bit)))
 

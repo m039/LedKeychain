@@ -1,7 +1,7 @@
 #ifndef _COMMON_H
 #define _COMMON_H
 
-#if ATMEGA328
+#ifdef ARDUINO
 
 #include <Arduino.h>
 
@@ -24,51 +24,6 @@
 #define ROW8 15  // C1
 
 #define BUTTON 16 // C2
-
-#define PIN_MODE_OUTPUT(pin) pinMode(pin, OUTPUT)
-
-#elif ATTINY2313
-
-#include <Arduino.h>
-
-// 0 - PD0
-// 1 - PD1
-// 2 - PA1
-// 3 - PA0
-// 4 - PD2
-// 5 - PD3
-// 6 - PD4
-// 7 - PD5
-// 8 - PD6
-// 9 - PB0
-// 10 - PB1
-// 11 - PB2
-// 12 - PB3
-// 13 - PB4
-// 14 - PB5
-// 15 - PB6
-// 16 - PB7
-// 17 - PA2
-
-#define COL1 0 // PD0
-#define COL2 5 // PD3
-#define COL3 15 // PB6
-#define COL4 3 // PA0
-#define COL5 8 // PD6
-#define COL6 14 // PB5
-#define COL7 9 // PB0
-#define COL8 12 // PB3
-
-#define ROW1 4 // PD2
-#define ROW2 10 // PB1
-#define ROW3 11 // PB2
-#define ROW4 1 // PD1
-#define ROW5 13 // PB4
-#define ROW6 2 // PA1
-#define ROW7 6 // PD4
-#define ROW8 7 // PD5
-
-#define BUTTON 16 // PB7
 
 #define PIN_MODE_OUTPUT(pin) pinMode(pin, OUTPUT)
 
