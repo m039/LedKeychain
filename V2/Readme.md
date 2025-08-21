@@ -1,1 +1,1 @@
-The same project, but with ATtiny2313A.
+The same project, but with ATtiny2313A and ATtiny85 (with MAX7219).

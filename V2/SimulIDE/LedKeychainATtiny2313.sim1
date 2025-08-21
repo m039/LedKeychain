@@ -22,7 +22,7 @@
 
 <item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,-56" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="MCU" CircId="tiny2313-19" mainComp="false" Show_id="true" Show_Val="false" Pos="-396,-60" rotation="0" hflip="1" vflip="1" label="tiny2313-19" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../Code/LedKeychain/.pio/build/attiny2313/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+<item itemtype="MCU" CircId="tiny2313-19" mainComp="false" Show_id="true" Show_Val="false" Pos="-396,-60" rotation="0" hflip="1" vflip="1" label="tiny2313-19" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Code/LedKeychain/.pio/build/attiny2313/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
 
 <item itemtype="Connector" uid="Connector-18" startpinid="Resistor-9-lPin" endpinid="LedMatrix-1-pinCol7" pointList="-124,0,-124,-88,-116,-88" />
 
@@ -44,7 +44,7 @@
 
 <item itemtype="Connector" uid="Connector-220" startpinid="tiny2313-19-PORTD6" endpinid="LedMatrix-1-pinRow4" pointList="-356,20,-340,20,-340,-76,-484,-76,-484,-184,-76,-184,-76,-160" />
 
-<item itemtype="Connector" uid="Connector-221" startpinid="tiny2313-19-PORTB3" endpinid="LedMatrix-1-pinRow7" pointList="-356,-12,-316,-12,-316,-100,-508,-100,-508,-160,-100,-160" />
+<item itemtype="Connector" uid="Connector-221" startpinid="tiny2313-19-PORTB3" endpinid="LedMatrix-1-pinRow7" pointList="-356,-12,-356,-16,-316,-16,-316,-100,-508,-100,-508,-160,-100,-160" />
 
 <item itemtype="Connector" uid="Connector-224" startpinid="tiny2313-19-PORTB6" endpinid="LedMatrix-1-pinRow2" pointList="-356,-36,-348,-36,-348,-68,-468,-68,-468,-200,-60,-200,-60,-160" />
 
