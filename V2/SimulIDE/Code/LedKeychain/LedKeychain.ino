@@ -2,30 +2,30 @@
 
 // MCU: Attiny2313A
 
-#define ROW1 0  // PD0
-#define ROW2 1  // PD1
-#define ROW3 2  // PA1
-#define ROW4 3  // PA0
-#define ROW5 4  // PD2
-#define ROW6 5  // PD3
-#define ROW7 6  // PD4
-#define ROW8 7  // PD5
+#define COL1 0 // PD0
+#define COL2 5 // PD3
+#define COL3 15 // PB6
+#define COL4 3 // PA0
+#define COL5 8 // PD6
+#define COL6 14 // PB5
+#define COL7 9 // PB0
+#define COL8 12 // PB3
 
-#define COLUMN1 8   // PD6
-#define COLUMN2 9   // PB0
-#define COLUMN3 10  // PB1
-#define COLUMN4 11  // PB2
-#define COLUMN5 12  // PB3
-#define COLUMN6 13  // PB4
-#define COLUMN7 14  // PB5
-#define COLUMN8 15  // PB6
+#define ROW1 4 // PD2
+#define ROW2 10 // PB1
+#define ROW3 11 // PB2
+#define ROW4 1 // PD1
+#define ROW5 13 // PB4
+#define ROW6 2 // PA1
+#define ROW7 6 // PD4
+#define ROW8 7 // PD5
 
 const int row[8] = {
   ROW1, ROW2, ROW3, ROW4, ROW5, ROW6, ROW7, ROW8
 };
 
 const int col[8] = {
-  COLUMN1, COLUMN2, COLUMN3, COLUMN4, COLUMN5, COLUMN6, COLUMN7, COLUMN8
+  COL1, COL2, COL3, COL4, COL5, COL6, COL7, COL8
 };
 
 int pixels[8];

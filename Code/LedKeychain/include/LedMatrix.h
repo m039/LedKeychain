@@ -16,7 +16,7 @@ const uint8_t Blank[8]= { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 };
 class LedMatrix {
     private:
     uint32_t _intensity;
-    uint8_t _pixels[8][8];
+    uint8_t _pixels[8];
     uint32_t _pwm;
     void invalidate();
     void refreshScreenInternal();

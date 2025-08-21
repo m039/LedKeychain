@@ -3,7 +3,9 @@
 #if ARDUINO
 
 void App::init() {
+#ifndef ATTINY2313
     randomSeed(0x12345678);
+#endif
 
     pinMode(BUTTON, INPUT_PULLUP);
 
@@ -55,16 +57,14 @@ void App::update() {
 #if ARDUINO
 
 void App::delay(uint32_t d) {
-    unsigned long prevTime;
-    unsigned long duration = 0;
-
-    prevTime = millis();
+    _duration = 0;
+    _prevTime = millis();
     while (true) {
         unsigned long time = millis();
-        unsigned long tmp = (time - prevTime);
-        prevTime = time;
-        duration += tmp;
-        if (duration > d) {
+        unsigned long tmp = (time - _prevTime);
+        _prevTime = time;
+        _duration += tmp;
+        if (_duration > d) {
             break;
         }
 
@@ -102,7 +102,11 @@ void App::delay(uint32_t d) {
 #if ARDUINO
 
 int16_t App::getRandom(int8_t minInclusive, int8_t maxExclusive) {
+#ifndef ATTINY2313
     return random(minInclusive, maxExclusive);
+#else
+    return 0;
+#endif
 }
 
 #elif CH32V003

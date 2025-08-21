@@ -8,6 +8,8 @@ class App {
     private:
     bool _buttonWasPressed;
     bool _buttonIsPressed;
+    unsigned long _prevTime;
+    unsigned long _duration = 0;
     bool updateInternal();
 
     public:

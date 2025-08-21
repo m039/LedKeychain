@@ -22,7 +22,7 @@
 
 <item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,-56" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="MCU" CircId="tiny2313-18" mainComp="false" Show_id="true" Show_Val="false" Pos="-396,-60" rotation="0" hflip="1" vflip="1" label="tiny2313-18" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Code/LedKeychain/build/ATTinyCore.avr.attinyx313/LedKeychain.ino.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" MainMcu="false" SerialMon="-1" />
+<item itemtype="MCU" CircId="tiny2313-19" mainComp="false" Show_id="true" Show_Val="false" Pos="-396,-60" rotation="0" hflip="1" vflip="1" label="tiny2313-19" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../Code/LedKeychain/.pio/build/attiny2313/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
 
 <item itemtype="Connector" uid="Connector-18" startpinid="Resistor-9-lPin" endpinid="LedMatrix-1-pinCol7" pointList="-124,0,-124,-88,-116,-88" />
 
@@ -42,38 +42,38 @@
 
 <item itemtype="Connector" uid="Connector-53" startpinid="Push-16-switch0pinN" endpinid="Ground-17-Gnd" pointList="-228,-84,-216,-84,-216,-72" />
 
-<item itemtype="Connector" uid="Connector-80" startpinid="tiny2313-18-PORTA0" endpinid="LedMatrix-1-pinRow3" pointList="-404,-20,-436,-20,-436,-192,-68,-192,-68,-160" />
+<item itemtype="Connector" uid="Connector-220" startpinid="tiny2313-19-PORTD6" endpinid="LedMatrix-1-pinRow4" pointList="-356,20,-340,20,-340,-76,-484,-76,-484,-184,-76,-184,-76,-160" />
 
-<item itemtype="Connector" uid="Connector-81" startpinid="tiny2313-18-PORTD2" endpinid="LedMatrix-1-pinRow4" pointList="-404,-12,-444,-12,-444,-184,-76,-184,-76,-160" />
+<item itemtype="Connector" uid="Connector-221" startpinid="tiny2313-19-PORTB3" endpinid="LedMatrix-1-pinRow7" pointList="-356,-12,-316,-12,-316,-100,-508,-100,-508,-160,-100,-160" />
 
-<item itemtype="Connector" uid="Connector-82" startpinid="tiny2313-18-PORTD1" endpinid="LedMatrix-1-pinRow1" pointList="-404,-36,-420,-36,-420,-208,-52,-208,-52,-160" />
+<item itemtype="Connector" uid="Connector-224" startpinid="tiny2313-19-PORTB6" endpinid="LedMatrix-1-pinRow2" pointList="-356,-36,-348,-36,-348,-68,-468,-68,-468,-200,-60,-200,-60,-160" />
 
-<item itemtype="Connector" uid="Connector-84" startpinid="tiny2313-18-PORTA1" endpinid="LedMatrix-1-pinRow2" pointList="-404,-28,-428,-28,-428,-200,-60,-200,-60,-160" />
+<item itemtype="Connector" uid="Connector-226" startpinid="tiny2313-19-PORTA0" endpinid="LedMatrix-1-pinRow3" pointList="-404,-20,-476,-20,-476,-192,-68,-192,-68,-160" />
 
-<item itemtype="Connector" uid="Connector-85" startpinid="tiny2313-18-PORTD3" endpinid="LedMatrix-1-pinRow5" pointList="-404,-4,-452,-4,-452,-176,-84,-176,-84,-160" />
+<item itemtype="Connector" uid="Connector-230" startpinid="tiny2313-19-PORTD0" endpinid="LedMatrix-1-pinRow0" pointList="-404,-44,-452,-44,-452,-216,-44,-216,-44,-160" />
 
-<item itemtype="Connector" uid="Connector-86" startpinid="tiny2313-18-PORTD4" endpinid="LedMatrix-1-pinRow6" pointList="-404,4,-460,4,-460,-168,-92,-168,-92,-160" />
+<item itemtype="Connector" uid="Connector-231" startpinid="tiny2313-19-PORTB0" endpinid="LedMatrix-1-pinRow6" pointList="-356,12,-324,12,-324,-92,-500,-92,-500,-168,-92,-168,-92,-160" />
 
-<item itemtype="Connector" uid="Connector-87" startpinid="tiny2313-18-PORTD5" endpinid="LedMatrix-1-pinRow7" pointList="-404,12,-468,12,-468,-160,-100,-160" />
+<item itemtype="Connector" uid="Connector-233" startpinid="tiny2313-19-PORTB5" endpinid="LedMatrix-1-pinRow5" pointList="-356,-28,-332,-28,-332,-84,-492,-84,-492,-176,-84,-176,-84,-160" />
 
-<item itemtype="Connector" uid="Connector-109" startpinid="Resistor-3-rPin" endpinid="tiny2313-18-PORTB0" pointList="-172,32,-172,96,-340,96,-340,12,-356,12" />
+<item itemtype="Connector" uid="Connector-235" startpinid="tiny2313-19-PORTD3" endpinid="LedMatrix-1-pinRow1" pointList="-404,-4,-460,-4,-460,-208,-52,-208,-52,-160" />
 
-<item itemtype="Connector" uid="Connector-111" startpinid="tiny2313-18-PORTB3" endpinid="Resistor-6-rPin" pointList="-356,-12,-316,-12,-316,120,-148,120,-148,32" />
+<item itemtype="Connector" uid="Connector-236" startpinid="tiny2313-19-PORTD2" endpinid="Resistor-2-rPin" pointList="-404,-12,-412,-12,-412,100,-180,100,-180,-12" />
 
-<item itemtype="Connector" uid="Connector-112" startpinid="tiny2313-18-PORTB1" endpinid="Resistor-4-rPin" pointList="-356,4,-332,4,-332,104,-164,104,-164,76" />
+<item itemtype="Connector" uid="Connector-237" startpinid="tiny2313-19-PORTB1" endpinid="Resistor-3-rPin" pointList="-356,4,-348,4,-348,108,-172,108,-172,32" />
 
-<item itemtype="Connector" uid="Connector-113" startpinid="tiny2313-18-PORTB2" endpinid="Resistor-7-rPin" pointList="-356,-4,-324,-4,-324,112,-156,112,-156,-12" />
+<item itemtype="Connector" uid="Connector-238" startpinid="tiny2313-19-PORTB2" endpinid="Resistor-4-rPin" pointList="-356,-4,-332,-4,-332,116,-164,116,-164,76" />
 
-<item itemtype="Connector" uid="Connector-114" startpinid="tiny2313-18-PORTB5" endpinid="Resistor-10-rPin" pointList="-356,-28,-300,-28,-300,136,-132,136,-132,-12" />
+<item itemtype="Connector" uid="Connector-239" startpinid="tiny2313-19-PORTD1" endpinid="Resistor-7-rPin" pointList="-404,-36,-420,-36,-420,124,-156,124,-156,-12" />
 
-<item itemtype="Connector" uid="Connector-115" startpinid="tiny2313-18-PORTB4" endpinid="Resistor-5-rPin" pointList="-356,-20,-308,-20,-308,128,-140,128,-140,76" />
+<item itemtype="Connector" uid="Connector-240" startpinid="tiny2313-19-PORTB4" endpinid="Resistor-6-rPin" pointList="-356,-20,-308,-20,-308,132,-148,132,-148,32" />
 
-<item itemtype="Connector" uid="Connector-119" startpinid="tiny2313-18-PORTB6" endpinid="Resistor-9-rPin" pointList="-356,-36,-292,-36,-292,144,-124,144,-124,32" />
+<item itemtype="Connector" uid="Connector-241" startpinid="tiny2313-19-PORTA1" endpinid="Resistor-5-rPin" pointList="-404,-28,-428,-28,-428,140,-140,140,-140,76" />
 
-<item itemtype="Connector" uid="Connector-123" startpinid="tiny2313-18-PORTB7" endpinid="Push-16-pinP0" pointList="-356,-44,-292,-44,-292,-84,-260,-84" />
+<item itemtype="Connector" uid="Connector-242" startpinid="tiny2313-19-PORTD4" endpinid="Resistor-10-rPin" pointList="-404,4,-436,4,-436,148,-132,148,-132,-12" />
 
-<item itemtype="Connector" uid="Connector-127" startpinid="tiny2313-18-PORTD6" endpinid="Resistor-2-rPin" pointList="-356,20,-348,20,-348,88,-180,88,-180,-12" />
+<item itemtype="Connector" uid="Connector-243" startpinid="tiny2313-19-PORTD5" endpinid="Resistor-9-rPin" pointList="-404,12,-444,12,-444,156,-124,156,-124,32" />
 
-<item itemtype="Connector" uid="Connector-131" startpinid="tiny2313-18-PORTD0" endpinid="LedMatrix-1-pinRow0" pointList="-404,-44,-412,-44,-412,-216,-44,-216,-44,-160" />
+<item itemtype="Connector" uid="Connector-246" startpinid="tiny2313-19-PORTB7" endpinid="Push-16-pinP0" pointList="-356,-44,-292,-44,-292,-84,-260,-84" />
 
 </circuit>

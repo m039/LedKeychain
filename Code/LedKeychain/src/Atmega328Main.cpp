@@ -1,4 +1,4 @@
-#ifdef ARDUINO
+#if ATMEGA328
 
 #include <stdio.h>
 #include <stdlib.h>
