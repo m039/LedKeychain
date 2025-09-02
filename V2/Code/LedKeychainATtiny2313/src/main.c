@@ -19,23 +19,23 @@
 // 16 - PB7
 // 17 - PA2
 
-#define COL1 0 // PD0
-#define COL2 5 // PD3
-#define COL3 15 // PB6
-#define COL4 3 // PA0
-#define COL5 8 // PD6
-#define COL6 14 // PB5
-#define COL7 9 // PB0
-#define COL8 12 // PB3
+#define ROW1 0 // PD0
+#define ROW2 5 // PD3
+#define ROW3 15 // PB6
+#define ROW4 3 // PA0
+#define ROW5 8 // PD6
+#define ROW6 14 // PB5
+#define ROW7 9 // PB0
+#define ROW8 12 // PB3
 
-#define ROW1 4 // PD2
-#define ROW2 10 // PB1
-#define ROW3 11 // PB2
-#define ROW4 1 // PD1
-#define ROW5 13 // PB4
-#define ROW6 2 // PA1
-#define ROW7 6 // PD4
-#define ROW8 7 // PD5
+#define COL1 4 // PD2
+#define COL2 10 // PB1
+#define COL3 11 // PB2
+#define COL4 1 // PD1
+#define COL5 13 // PB4
+#define COL6 2 // PA1
+#define COL7 6 // PD4
+#define COL8 7 // PD5
 
 // #define BUTTON 16 // PB7
 
@@ -86,7 +86,7 @@ void displayFrame(const uint8_t* frame) {
 
 void refreshScreen() {
     _pwm++;
-    if (_pwm > 16 * 16) {
+    if (_pwm > 16) {
         _pwm = 0;
     }
 
