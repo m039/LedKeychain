@@ -1,3 +1,5 @@
+#if TORIGINAL
+
 #include <Arduino.h>
 
 // 0 - PD0
@@ -152,3 +154,5 @@ void loop() {
     delayWithRefresh(150);
   }
 }
+
+#endif
